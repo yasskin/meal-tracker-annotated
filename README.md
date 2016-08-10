@@ -21,18 +21,16 @@ https://github.com/yasskin/github-user.git
 
 SETUP NOTES //////////////////////
 
-/*
-
 clone repo
 
-install globals if needed (gulp, bower, sass, typescript, typescript packages.)
-npm install gulp -g
-npm install bower -g
-gem install sass
-npm install typescript -g
-apm install atom-typescript
-gulp build
-gulp serve */
+1. install globals if needed (gulp, bower, sass, typescript, typescript packages.)
+2. npm install gulp -g
+3. npm install bower -g
+4. gem install sass
+5. npm install typescript -g
+6. apm install atom-typescript
+7. gulp build
+8. gulp serve */
 
 1. Gather the back-end packages the program requires
 ```
