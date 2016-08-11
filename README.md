@@ -13,32 +13,53 @@ Requirement & Objectives | Complete
 :------------- | :-------------: |
 *Requirement*: Tk. | X
 *Objective*: Tk. | X
+*Objective*: Tk. | X
+*Objective*: Tk. | X
+*Objective*: Tk. | X
+*Objective*: Tk. | X
+*Objective*: Tk. | X
+
 
 ## Setup/Installation Requirements
 
 * _Clone the repository from GitHub_
+```
 https://github.com/yasskin/github-user.git
+```
+1. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
-SETUP NOTES //////////////////////
+```
+$ npm install gulp -g <!-- only needs to be done once -->
+```
+```
+$ npm install bower -g <!-- only needs to be done once -->
+```
+```
+$ npm install typescript -g
+```
+```
+$ apm install atom-typescript
+```
+2. Gather the UI packages the program requires
 
-clone repo
-
-1. install globals if needed (gulp, bower, sass, typescript, typescript packages.)
-2. npm install gulp -g
-3. npm install bower -g
-4. gem install sass
-5. npm install typescript -g
-6. apm install atom-typescript
-7. gulp build
-8. gulp serve */
-
+```
+$ gem install sass
+```
+```
+$ bower install <!-- saved into bower_components/ -->
+```
 1. Gather the back-end packages the program requires
+
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-2. Gather the front-end packages the program requires
+* Construct and display the App on the local server
+
 ```
-$ bower install <!-- saved into bower_components/ -->
+$ gulp build
+```
+```
+$ gulp serve
 ```
 
 ## Known Bugs
@@ -70,6 +91,9 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 
 Copyright (c) 2016 **_Noah Yasskin_**
 
+The MIT License (MIT)
+Copyright (c) 2016, Noah Yasskin
+https://opensource.org/licenses/MIT
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
