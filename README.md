@@ -35,6 +35,9 @@ $ npm install gulp -g <!-- only needs to be done once -->
 $ npm install bower -g <!-- only needs to be done once -->
 ```
 ```
+$ gem install sass
+```
+```
 $ npm install typescript -g
 ```
 ```
@@ -43,17 +46,14 @@ $ apm install atom-typescript
 2. Gather the UI packages the program requires
 
 ```
-$ gem install sass
-```
-```
 $ bower install <!-- saved into bower_components/ -->
 ```
-1. Gather the back-end packages the program requires
+3. Gather the back-end packages the program requires
 
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-* Construct and display the App on the local server
+4. Construct and display the App on the local server
 
 ```
 $ gulp build
@@ -69,7 +69,7 @@ $ gulp serve
 ## Support and contact details
 
 * _View the repository on GitHub at:_
-https://github.com/yasskin/github-user
+https://github.com/yasskin/
 
 _If you run into any issues or have questions, ideas, or concerns, please feel free to contact Noah:_
 
