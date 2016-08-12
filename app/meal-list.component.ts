@@ -12,21 +12,23 @@ import { CaloriesPipe } from './calories.pipe';
   pipes: [CaloriesPipe],
   directives: [MealComponent, EditMealDetailsComponent, NewMealComponent],
   template: `
-    <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
-    <select (change)="onChange($event.target.value)">
-      <option value="showAll" selected="selected">Show All</option>
-      <option value="over500">Show 500 Plus Calories Meals</option>
-      <option value="under500">Show Under 500 Calories Meals</option>
-    </select>
-    <meal-display *ngFor="#currentMeal of mealList | calories:selectedCalories"
-      (click)="mealClicked(currentMeal)"
-      [class.selected]="currentMeal === selectedMeal"
-      [meal]="currentMeal">
-    </meal-display>
-    <edit-meal-details
-      *ngIf="selectedMeal"
-      [meal]="selectedMeal">
-    </edit-meal-details>
+    <div class="col-md-10 col-md-offset-1">
+      <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
+      <select (change)="onChange($event.target.value)">
+        <option value="showAll" selected="selected">Show All</option>
+        <option value="over500">Show High Calorie Meals</option>
+        <option value="under500">Show Low Calorie Meals</option>
+      </select>
+      <meal-display *ngFor="#currentMeal of mealList | calories:selectedCalories"
+        (click)="mealClicked(currentMeal)"
+        [class.selected]="currentMeal === selectedMeal"
+        [meal]="currentMeal">
+      </meal-display>
+      <edit-meal-details
+        *ngIf="selectedMeal"
+        [meal]="selectedMeal">
+      </edit-meal-details>
+    </div>
   `
 })
 export class MealListComponent {

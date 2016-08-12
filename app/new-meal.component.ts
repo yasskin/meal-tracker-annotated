@@ -6,10 +6,8 @@ import { Meal } from './meal.model';
   outputs: ['onSubmitNewMeal'],
   template: `
     <div class="meal-form">
-      <div>
-        <img class="green-tracker" src="./../resources/images/green-tracker.png">
-      </div>
-      <h3>Log Meal</h3>
+      <h3>Log New Meal</h3>
+      <img class="green-tracker" src="./../resources/images/green-tracker.png">
       <input placeholder="Name" class="input-lg" #newName>
       <input placeholder="Details" class="input-lg" #newDetails>
       <input placeholder="Calories" class="input-lg" #newCalories>

@@ -1,22 +1,31 @@
+body {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
 h1 {
-  color: green;
-  font-size: 500%;
+  color: #00b33c;
+  font-size: 800%;
+  text-align: center;
 }
 
 .logo {
   width: 30%;
+  margin: auto;
+  display: block;
 }
 
 .red-tracker {
   width: 7%;
+  margin: 40px;
 }
 
 .green-tracker {
   width: 7%;
+  margin: 40px;
 }
 
 .selected {
-  color: #22bdf0;
+  color: #cc4400;
 }
 
 .meal-form {
