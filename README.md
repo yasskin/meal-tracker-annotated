@@ -1,10 +1,10 @@
 # _GitHub_
 
-#### _Epicodus: JavaScript_
+#### _MEAL TRACKER : Epicodus: JavaScript / Angular JS / Independent Project_
 
 #### By _**Noah Yasskin**_
 
-## Description
+## Description: Meal Tracker
 
 _This is an Epicodus [http://www.epicodus.com/] student  project created_
 
@@ -28,24 +28,27 @@ Calories: 365
 ---------
 ```
 
-Requirement & Objectives | Complete
+Project Requirement & Objectives | Complete
 :------------- | :-------------: |
-*Requirement*: Tk. | X
-*Objective*: Tk. | X
-*Objective*: Tk. | X
-*Objective*: Tk. | X
-*Objective*: Tk. | X
-*Objective*: Tk. | X
-*Objective*: Tk. | X
+*Requirement*: The application works as expected | X
+*Objective*: The app is structured in a logical way, including a model, multiple components and TypeScript | X
+*Objective*: The application creates and edits new instances of a model. | X
+*Objective*: The app allows you to view a list of foods logged with name, details, and calories. | X
+*Objective*: The app allows you to filer foods based on their calories (more than 500 or less than 500). | X
+*Objective*: Dependencies are managed with npm and Bower. | X
+*Objective*: The app includes a gulp-based asset pipeline with a development server. | X
+*Objective*: The code meets standards from previous weeks. | X
+*Objective*: The project is in a presentable, portfolio-quality state. | X
 
 _Angular Component Tree_
 
 | Component        | Action           | Parent  |
 | ------------- |:-------------:| -----:|
 | AppComponent      | holds data | -- |
-| *Component      | List | AppComponent |
-| *Component      | New | AppComponent |
-| *Component      | Edit | AppComponent |
+| ListMealComponent      | List all meals logged and filter meals by calories | AppComponent |
+| NewMealComponent      | Log new meals | ListMealComponent |
+| EditMealComponent      | Modify existing meals | ListMealComponent |
+| MealComponent      | Display a single meal with its name, details, and calories  | ListMealComponent |
 
 ## User Stories
 
@@ -120,6 +123,8 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 * _Node.js_
 * _Gulp_
 * _Bower_
+* _TypeScript_
+
 
 ### License
 

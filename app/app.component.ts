@@ -4,7 +4,7 @@ import { Component } from 'angular2/core';
   selector: 'my-app',
   template: `
     <div class="container">
-      <h1>New Skeleton Angular2 App!</h1>
+      <h1>Cameron's Meal Tracker!</h1>
     </div>
   `
 })

@@ -1,9 +1,9 @@
 {
-  "name": "angular2-skeleton-app",
-  "description": "",
+  "name": "meal-tracker",
+  "description": "angular javascript app",
   "main": "",
   "license": "ISC",
-  "homepage": "https://github.com/yasskin/angular-skeleton",
+  "homepage": "https://github.com/yasskin/meal-tracker",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,5 +13,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
-  }
+  },
+  "authors": [
+    "Noah <yasskin@icloud.com>"
+  ]
 }
