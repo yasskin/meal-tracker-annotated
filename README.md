@@ -1,17 +1,17 @@
-# _GitHub_
+# _MEAL TRACKER_
 
-#### _MEAL TRACKER : Epicodus: JavaScript / Angular JS / Independent Project_
+### _Epicodus: JavaScript / Angular2 / Independent Project_
 
-#### By _**Noah Yasskin**_
+### By _**Noah Yasskin**_
 
 ## Description: Meal Tracker
 
-_This is an Epicodus [http://www.epicodus.com/] student  project created_
+_This is an Epicodus [http://www.epicodus.com/] student  project_
 
-_A meal tracking application._
-_Users can log foods they've eaten each day, including details about the meal and its number of calories. Foods being logged are for a single day (at this point it does not keep track of multiple days' meals)_
+_Meal Tracker is a meal tracking application._
+_Users can log foods they've eaten each day, including details about the meal and its number of calories. Foods being logged are for a single day. At this point it does not keep track of multiple days' meals._
 
-_For example_
+_For example:_
 
 ```
 ---------
@@ -21,32 +21,34 @@ Calories: 354
 ---------
 ```
 
+### Project Requirement & Objectives
+
 Project Requirement & Objectives | Complete
 :------------- | :-------------: |
 *Requirement*: The application works as expected | X
 *Objective*: The app is structured in a logical way, including a model, multiple components and TypeScript | X
 *Objective*: The application creates and edits new instances of a model. | X
 *Objective*: The app allows you to view a list of foods logged with name, details, and calories. | X
-*Objective*: The app allows you to filer foods based on their calories (more than 500 or less than 500). | X
+*Objective*: The app allows you to filer foods based on their calories (500+ or less than 500). | X
 *Objective*: Dependencies are managed with npm and Bower. | X
 *Objective*: The app includes a gulp-based asset pipeline with a development server. | X
 *Objective*: The code meets standards from previous weeks. | X
 *Objective*: Files follow the naming convention of feature.type.ts. | X
 *Objective*: The project is in a presentable, portfolio-quality state. | X
 
-_Angular Component Tree_
+### Angular2 Component Tree
 
-| Component        | Action           | Parent  |
-| ------------- |:-------------:| -----:|
-| AppComponent      | holds data | -- |
-| ListMealComponent      | List all meals logged and filter meals by calories | AppComponent |
-| NewMealComponent      | Log new meals | ListMealComponent |
-| EditMealComponent      | Modify existing meals | ListMealComponent |
-| MealComponent      | Display a single meal with its name, details, and calories  | ListMealComponent |
+| Component | Action | Parent  |
+:------------- | :-------------:| :-----:|
+| `AppComponent` | Holds data | -- |
+| `ListMealComponent` | List all meals logged and filter meals by calories | `AppComponent` |
+| `NewMealComponent` | Log new meals | `ListMealComponent` |
+| `EditMealComponent` | Modify existing meals | `ListMealComponent` |
+| `MealComponent` | Display a single meal with its name, details, and calories  | `ListMealComponent` |
 
 ## User Stories
 
-_As a user…_
+_As a user . . ._
 
 _I want to log a food I have eaten by submitting a form with food name, calories and details._
 _I want to view a list of foods I have logged._
@@ -118,7 +120,6 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 * _Gulp_
 * _Bower_
 * _TypeScript_
-
 
 ### License
 
