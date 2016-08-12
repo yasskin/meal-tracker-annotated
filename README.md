@@ -19,14 +19,25 @@ Requirement & Objectives | Complete
 *Objective*: Tk. | X
 *Objective*: Tk. | X
 
+| Component        | Action           | Parent  |
+| ------------- |:-------------:| -----:|
+| AppComponent      | holds data | -- |
+| *Component      | List | AppComponent |
+| *Component      | New | AppComponent |
+| *Component      | Edit | AppComponent |
+
+
+
+## User Stories
+
 
 ## Setup/Installation Requirements
 
-* _Clone the repository from GitHub_
+1. Clone the repository from GitHub_
 ```
-https://github.com/yasskin/github-user.git
+$Git clone https://github.com/yasskin/[INSERT-PROJECT-NAME-HERE].git
 ```
-1. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
+2. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
 ```
 $ npm install gulp -g <!-- only needs to be done once -->
@@ -43,17 +54,17 @@ $ npm install typescript -g
 ```
 $ apm install atom-typescript
 ```
-2. Gather the UI packages the program requires
+3. Gather the UI packages the program requires
 
 ```
 $ bower install <!-- saved into bower_components/ -->
 ```
-3. Gather the back-end packages the program requires
+4. Gather the back-end packages the program requires
 
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-4. Construct and display the App on the local server
+5. Construct and display the App on the local server
 
 ```
 $ gulp build
