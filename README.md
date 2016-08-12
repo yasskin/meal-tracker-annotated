@@ -20,13 +20,6 @@ Details: "Didn't get a soda or cheese on my burger!"
 Calories: 354
 ---------
 ```
-```
----------
-Name: "Fries"
-Details: "I only ate half of them."
-Calories: 365
----------
-```
 
 Project Requirement & Objectives | Complete
 :------------- | :-------------: |
@@ -38,6 +31,7 @@ Project Requirement & Objectives | Complete
 *Objective*: Dependencies are managed with npm and Bower. | X
 *Objective*: The app includes a gulp-based asset pipeline with a development server. | X
 *Objective*: The code meets standards from previous weeks. | X
+*Objective*: Files follow the naming convention of feature.type.ts. | X
 *Objective*: The project is in a presentable, portfolio-quality state. | X
 
 _Angular Component Tree_
@@ -63,7 +57,7 @@ _I want to click a food to edit its name, details or calories (in case I decide 
 
 Clone the repository from GitHub_
 ```
-$Git clone https://github.com/yasskin/meal-tracker.git
+$ Git clone https://github.com/yasskin/meal-tracker.git
 ```
 Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
@@ -108,7 +102,7 @@ $ gulp serve
 ## Support and contact details
 
 * _View the repository on GitHub at:_
-https://github.com/yasskin/
+https://github.com/yasskin/meal-tracker
 
 _If you run into any issues or have questions, ideas, or concerns, please feel free to contact Noah:_
 
