@@ -8,6 +8,25 @@
 
 _This is an Epicodus [http://www.epicodus.com/] student  project created_
 
+_A meal tracking application._
+_Users can log foods they've eaten each day, including details about the meal and its number of calories. Foods being logged are for a single day (at this point it does not keep track of multiple days' meals)_
+
+_For example_
+
+```
+---------
+Name: "Hamburger"
+Details: "Didn't get a soda or cheese on my burger!"
+Calories: 354
+---------
+```
+```
+---------
+Name: "Fries"
+Details: "I only ate half of them."
+Calories: 365
+---------
+```
 
 Requirement & Objectives | Complete
 :------------- | :-------------: |
@@ -19,6 +38,8 @@ Requirement & Objectives | Complete
 *Objective*: Tk. | X
 *Objective*: Tk. | X
 
+_Angular Component Tree_
+
 | Component        | Action           | Parent  |
 | ------------- |:-------------:| -----:|
 | AppComponent      | holds data | -- |
@@ -26,18 +47,22 @@ Requirement & Objectives | Complete
 | *Component      | New | AppComponent |
 | *Component      | Edit | AppComponent |
 
-
-
 ## User Stories
 
+_As a user…_
+
+_I want to log a food I have eaten by submitting a form with food name, calories and details._
+_I want to view a list of foods I have logged._
+_I want options to view all foods, only high-calorie foods (more than 500 calories), or only lower-calorie foods (less than 500 calories)._
+_I want to click a food to edit its name, details or calories (in case I decide to pretend my fries were 100 calories instead of 365)._
 
 ## Setup/Installation Requirements
 
-1. Clone the repository from GitHub_
+Clone the repository from GitHub_
 ```
-$Git clone https://github.com/yasskin/[INSERT-PROJECT-NAME-HERE].git
+$Git clone https://github.com/yasskin/meal-tracker.git
 ```
-2. Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
+Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
 ```
 $ npm install gulp -g <!-- only needs to be done once -->
@@ -54,17 +79,17 @@ $ npm install typescript -g
 ```
 $ apm install atom-typescript
 ```
-3. Gather the UI packages the program requires
+Gather the UI packages the program requires
 
 ```
 $ bower install <!-- saved into bower_components/ -->
 ```
-4. Gather the back-end packages the program requires
+Gather the back-end packages the program requires
 
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-5. Construct and display the App on the local server
+Construct and display the App on the local server
 
 ```
 $ gulp build
@@ -89,12 +114,12 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 ## Technologies Used
 
 * _HTML & CSS_
+* _Angular2_
 * _SASS_
 * _JavaScript_
 * _Node.js_
 * _Gulp_
 * _Bower_
-* _GitHub API_
 
 ### License
 
