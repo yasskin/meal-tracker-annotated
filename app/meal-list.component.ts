@@ -40,7 +40,6 @@ export class MealListComponent {
     this.onMealSelect = new EventEmitter();
   }
   mealClicked(clickedMeal: Meal): void {
-console.log('child', clickedMeal);
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
@@ -51,6 +50,5 @@ console.log('child', clickedMeal);
   }
   onChange(optionFromMenu) {
     this.selectedCalories = optionFromMenu;
-console.log(this.selectedCalories);
   }
 }

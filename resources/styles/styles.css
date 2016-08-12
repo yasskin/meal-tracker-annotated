@@ -1,27 +1,38 @@
 body {
-  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 h1 {
   color: #00b33c;
   font-size: 800%;
   text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.meal-tracker {
+  margin: 50px;
 }
 
 .logo {
   width: 30%;
   margin: auto;
   display: block;
+  margin-bottom: 30px;
 }
 
 .red-tracker {
   width: 7%;
-  margin: 40px;
+  margin: auto;
+  display: block;
 }
 
 .green-tracker {
   width: 7%;
-  margin: 40px;
+  margin: auto;
+  display: block;
 }
 
 .selected {
@@ -29,12 +40,12 @@ h1 {
 }
 
 .meal-form {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .log-button {
-  margin-bottom: 10px;
+  margin-top: 20px;
   margin-left: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
