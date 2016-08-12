@@ -1,18 +1,42 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
+
+@Component({
+  selector: 'meal-display',
+  inputs: ['meal'],
+  template: `
+    <h3>
+      {{ meal.name }}, {{ meal.details }}, {{ meal.calories }}
+    </h3>
+    `
+})
+export class MealComponent {
+  public meal: Meal;
+}
 
 @Component({
   selector: 'meal-list',
   inputs: ['mealList'],
+  outputs: ['onMealSelect'],
+  directives: [MealComponent],
   template: `
-    <h3 *ngFor="#currentMeal of mealList" (click)="mealClicked(currentMeal)">
-      {{ currentMeal.name }}, {{ currentMeal.details }}, {{ currentMeal.calories }}
-    </h3>
+    <meal-display *ngFor="#currentMeal of mealList"
+      (click)="mealClicked(currentMeal)"
+      [class.selected]="currentMeal === selectedMeal"
+      [meal]="currentMeal">
+    </meal-display>
   `
 })
 export class MealListComponent {
   public mealList: Meal[];
+  public onMealSelect: EventEmitter<Meal>;
+  public selectedMeal: Meal;
+  constructor() {
+    this.onMealSelect = new EventEmitter();
+  }
   mealClicked(clickedMeal: Meal): void {
-console.log(clickedMeal);
+console.log('child', clickedMeal);
+    this.selectedMeal = clickedMeal;
+    this.onMealSelect.emit(clickedMeal);
   }
 }
 
@@ -22,7 +46,10 @@ console.log(clickedMeal);
   template: `
     <div class="container">
       <h1>Cameron's Meal Tracker!</h1>
-      <meal-list [mealList]="meals"></meal-list>
+      <meal-list
+        [mealList]="meals"
+        (onMealSelect)="mealWasSelected($event)">
+        </meal-list>
     </div>
   `
 })
@@ -38,7 +65,7 @@ export class AppComponent {
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
-console.log(clickedMeal);
+console.log('parent', clickedMeal);
   }
 }
 
