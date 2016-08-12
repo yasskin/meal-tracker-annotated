@@ -6,10 +6,14 @@ import { Meal } from './meal.model';
   inputs: ['meal'],
   template: `
     <div class="meal-form">
-    <h3>Edit Meal:</h3>
+    <div>
+      <img class="red-tracker" src="./../resources/images/red-tracker.png">
+    </div>
+    <h3>Edit Meal</h3>
     <input [(ngModel)]="meal.name" class="input-lg meal-form">
     <input [(ngModel)]="meal.details" class="input-lg meal-form">
     <input [(ngModel)]="meal.calories" class="input-lg meal-form">
+    </div>
   `
 })
 export class EditMealDetailsComponent {

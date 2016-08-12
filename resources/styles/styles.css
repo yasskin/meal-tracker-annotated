@@ -1,5 +1,18 @@
 h1 {
-  color: blue;
+  color: green;
+  font-size: 500%;
+}
+
+.logo {
+  width: 30%;
+}
+
+.red-tracker {
+  width: 7%;
+}
+
+.green-tracker {
+  width: 7%;
 }
 
 .selected {

@@ -61,6 +61,20 @@ Clone the repository from GitHub_
 ```
 $ Git clone https://github.com/yasskin/meal-tracker.git
 ```
+Remove the git remote url from the local repository.
+```
+$ git remote remove origin
+```
+Gather the UI packages the program requires
+
+```
+$ bower install <!-- saved into bower_components/ -->
+```
+Gather the back-end packages the program requires
+
+```
+$ npm install <!-- saved into node_modules/ -->
+```
 Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
 
 ```
@@ -78,24 +92,17 @@ $ npm install typescript -g
 ```
 $ apm install atom-typescript
 ```
-Gather the UI packages the program requires
-
-```
-$ bower install <!-- saved into bower_components/ -->
-```
-Gather the back-end packages the program requires
-
-```
-$ npm install <!-- saved into node_modules/ -->
-```
-Construct and display the App on the local server
+To construct the app, run the gulp build task in the terminal in the repository folder:
 
 ```
 $ gulp build
 ```
+To view the app, run the gulp serve task in the terminal in the repository folder:
+
 ```
 $ gulp serve
 ```
+Your browser should open the webpage automatically. If it doesn't, open your browser and go to `localhost:3000`.
 
 ## Known Bugs
 

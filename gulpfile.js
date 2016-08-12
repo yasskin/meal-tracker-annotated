@@ -31,7 +31,6 @@ var shell = require('gulp-shell');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
-
 ////////////////////// TYPESCRIPT //////////////////////
 
 // clean task
@@ -114,6 +113,7 @@ gulp.task('cssBuild', ['sassBuild'], function(){
 gulp.task('tsBuild', ['ts'], function(){
   browserSync.reload();
 });
+
 
 ////////////////////// GLOBAL BUILD TASK //////////////////////
 
