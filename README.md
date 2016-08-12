@@ -15,9 +15,9 @@ _For example:_
 
 ```
 ---------
-Name: "Hamburger"
-Details: "Didn't get a soda or cheese on my burger!"
-Calories: 354
+"Second Breakfast"
+Details: "Strawberry and Banana French Toast with Sausage and Bacon. Taken at about half past ten"
+Calories: 650
 ---------
 ```
 

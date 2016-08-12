@@ -14,7 +14,7 @@ import { CaloriesPipe } from './calories.pipe';
   template: `
     <div class="col-md-10 col-md-offset-1">
       <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
-      <select (change)="onChange($event.target.value)">
+      <select class="btn-lg" (change)="onChange($event.target.value)">
         <option value="showAll" selected="selected">Show All</option>
         <option value="over500">Show High Calorie Meals</option>
         <option value="under500">Show Low Calorie Meals</option>

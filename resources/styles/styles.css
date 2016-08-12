@@ -2,8 +2,8 @@ body {
 }
 
 h1 {
-  color: #00b33c;
-  font-size: 800%;
+  color: #29b473;
+  font-size: 600%;
   text-align: center;
   font-family: "Arial Black", Gadget, sans-serif;
 }
@@ -17,7 +17,7 @@ h3 {
 }
 
 .logo {
-  width: 30%;
+  width: 20%;
   margin: auto;
   display: block;
   margin-bottom: 30px;
@@ -36,7 +36,7 @@ h3 {
 }
 
 .selected {
-  color: #cc4400;
+  color: #c5553c;
 }
 
 .meal-form {
@@ -49,4 +49,9 @@ h3 {
   margin-left: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
+  background-color: #29b473;
+}
+
+#calorie-filter {
+  font-size: 200%;
 }
