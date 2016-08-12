@@ -90,7 +90,7 @@ $ gem install sass
 $ npm install typescript -g
 ```
 ```
-$ apm install atom-typescript
+$ apm install atom-typescript <!-- apm stands for Atom Package Manager -->
 ```
 To construct the app, run the gulp build task in the terminal in the repository folder:
 
