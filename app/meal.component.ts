@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
     <h4>Details: "{{ meal.details }}"</h4>
     <h4>Calories: {{ meal.calories }}</h4>
     `
-})
+}) // {{ mustache tags }}
 export class MealComponent {
   public meal: Meal;
 }

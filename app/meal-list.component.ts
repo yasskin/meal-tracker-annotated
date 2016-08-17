@@ -6,7 +6,7 @@ import { NewMealComponent } from './new-meal.component';
 import { CaloriesPipe } from './calories.pipe';
 
 @Component({
-  selector: 'meal-list',
+  selector: 'meal-list', // component selector <meal-list> tag, used to load this component in AppComponent
   inputs: ['mealList'],
   outputs: ['onMealSelect'],
   pipes: [CaloriesPipe],
@@ -29,7 +29,8 @@ import { CaloriesPipe } from './calories.pipe';
         [meal]="selectedMeal">
       </edit-meal-details>
     </div>
-  `
+  ` // *ngFor is a special keyword that is a directive build into Angular; it creates a for each loop in the template; mealList is the array, currentMeal is the element
+  //
 })
 export class MealListComponent {
   public mealList: Meal[];
@@ -39,7 +40,9 @@ export class MealListComponent {
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
-  mealClicked(clickedMeal: Meal): void {
+  mealClicked(clickedMeal: Meal): void { // the method triggered on click event
+  // mealClicked takes a parameter called clickedMeal, of the type Meal (our Model)
+  // void means the function does not return anything
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }

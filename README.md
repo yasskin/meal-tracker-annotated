@@ -30,7 +30,7 @@ Project Requirement & Objectives | Complete
 *Objective*: The application creates and edits new instances of a model. | X
 *Objective*: The app allows you to view a list of foods logged with name, details, and calories. | X
 *Objective*: The app allows you to filer foods based on their calories (500+ or less than 500). | X
-*Objective*: Dependencies are managed with npm and Bower. | X
+*Objective*: Build dependencies are managed with npm and front-end dependencies with Bower. | X
 *Objective*: The app includes a gulp-based asset pipeline with a development server. | X
 *Objective*: The code meets standards from previous weeks. | X
 *Objective*: Files follow the naming convention of feature.type.ts. | X
@@ -45,6 +45,9 @@ Project Requirement & Objectives | Complete
 | `NewMealComponent` | Log new meals | `ListMealComponent` |
 | `EditMealComponent` | Modify existing meals | `ListMealComponent` |
 | `MealComponent` | Display a single meal with its name, details, and calories  | `ListMealComponent` |
+
+### Key Components
+
 
 ## User Stories
 
@@ -65,19 +68,20 @@ Remove the git remote url from the local repository.
 ```
 $ git remote remove origin
 ```
-Gather the UI packages the program requires
-
-```
-$ bower install <!-- saved into bower_components/ -->
-```
-Gather the back-end packages the program requires
+Gather the back-end dependencies the program requires
 
 ```
 $ npm install <!-- saved into node_modules/ -->
 ```
-Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
+Gather the front-end packages the program requires
 
 ```
+$ bower install <!-- saved into bower_components/ -->
+```
+
+Install globals for your computer, if needed (gulp, bower, sass, typescript, typescript packages.)
+
+```npm
 $ npm install gulp -g <!-- only needs to be done once -->
 ```
 ```
@@ -93,12 +97,10 @@ $ npm install typescript -g
 $ apm install atom-typescript <!-- apm stands for Atom Package Manager -->
 ```
 To construct the app, run the gulp build task in the terminal in the repository folder:
-
 ```
 $ gulp build
 ```
-To view the app, run the gulp serve task in the terminal in the repository folder:
-
+To view and run the app, run the gulp serve task in the terminal in the repository folder:
 ```
 $ gulp serve
 ```
@@ -120,13 +122,13 @@ _If you run into any issues or have questions, ideas, or concerns, please feel f
 ## Technologies Used
 
 * _HTML & CSS_
-* _Angular2_
+* _Angular 2_
 * _SASS_
 * _JavaScript_
 * _Node.js_
 * _Gulp_
 * _Bower_
-* _TypeScript_
+* _TypeScript_ // A superset of JavaScript with extra tools for syntax and class declarations and data types.
 
 ### License
 
